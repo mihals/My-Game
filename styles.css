@@ -1,0 +1,35 @@
+* {
+    touch-action: none;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color:  transparent;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.flexContainer {display: flex; flex-direction: column; width: 676px; height: 1200px;
+    justify-content: flex-start;align-items: center; background-color: #01572c;cursor: default}
+    /* border-color: #2a1711; border-radius: 50px; border-width: thick; border-style: solid;} */
+#btnPlay {background-color: hsl(135, 100%, 7%); border-color: #5ce0f7; border-width: 5px;
+    border-radius: 30px; padding: 50px; margin-top: 50px;}
+.playTxt {color: #fafafa; font-family: Arial, Roboto, Helvetica, sans-serif;
+    font-weight: bold; font-size: 60px;  }
+#spoil {color: rgb(255, 0, 85); font-weight: bold; font-size: 40px;
+    font-family: Arial, Roboto, Helvetica, sans-serif}
+.listDiv {background-color: #01572c; width: 100%; text-align: center;margin-top: 10px;
+    overflow-y:scroll; color: #21324e; font-weight: bold;
+    font-size: 40px; font-family: Arial, Roboto, Helvetica, sans-serif;}
+.ulEl  {color: #21324e; font-weight: bold; font-size: 40px;
+    font-family: Arial, Roboto, Helvetica, sans-serif;}
+li {padding: 10px 0px 10px 0px; margin: 40px 0px 40px 0px; background-color: azure;}
+.lvlDisabled {opacity: 0.25;}
