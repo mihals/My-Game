@@ -3,26 +3,20 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <script src="game.min.js"></script>
+    <script src="game.js"></script>
+    <script src="/sdk.js"></script>
   </head>
-  <body>
-    <!-- <table id = "crestField">
-      <tr><td class="empty"></td><td id="c0"></td><td id="c1"></td><td class="empty"></td></tr>
-      <tr><td id="c2"></td><td id="c3"></td><td id="c4"></td><td id="c5"></td></tr>
-      <tr><td id="c6"></td><td id="c7"></td><td id="c8"></td><td id="c9"></td></tr>
-      <tr><td class="empty"></td><td id="c10"></td><td id="c11"></td><td class="empty"></td></tr>
-    </table> -->
-  <!-- 
-    таблица для квадратного поля 3x3, постфикс Sq
-    <table id = "gameField">
-      <tr><td id="c0"></td><td id="c1"></td><td id="c2"></td></tr>
-      <tr><td id="c3"></td><td id="c4"></td><td id="c5"></td></tr>
-      <tr><td id="c6"></td><td id="c7"></td><td id="c8"></td></tr>
-    </table> -->
+  <body oncontextmenu="return false;">
+    <!-- <div id = "msgDiv" style="position: absolute; top: 10;left: 10;
+      z-index: 1; background-color: aliceblue; font-size: 48px;">No Message </div> -->
     <div id = "krestinol"></div>
   
   <script>
-        MyGame.startGame()
+      if (typeof (YaGames) !== "undefined") {
+        MyGame.startGame(YaGames);
+      } else {
+        MyGame.startGame(null);
+      }
     </script>
   </body>
 </html>

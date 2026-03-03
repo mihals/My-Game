@@ -17,6 +17,7 @@
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
+body {background-image: url("bgSq95_0.png"); overflow-y: hidden;}
 .flexContainer {display: flex; flex-direction: column; width: 676px; height: 1200px;
     justify-content: flex-start;align-items: center; background-color: #01572c;cursor: default}
     /* border-color: #2a1711; border-radius: 50px; border-width: thick; border-style: solid;} */
@@ -29,7 +30,7 @@
 .listDiv {background-color: #01572c; width: 100%; text-align: center;margin-top: 10px;
     overflow-y:scroll; color: #21324e; font-weight: bold;
     font-size: 40px; font-family: Arial, Roboto, Helvetica, sans-serif;}
-.ulEl  {color: #21324e; font-weight: bold; font-size: 40px;
+.ulEl  {color: #21324e; font-weight: bold; font-size: 40px; list-style-type: none;
     font-family: Arial, Roboto, Helvetica, sans-serif;}
 li {padding: 10px 0px 10px 0px; margin: 40px 0px 40px 0px; background-color: azure;}
 .lvlDisabled {opacity: 0.25;}
